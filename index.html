@@ -12,19 +12,29 @@
     </head>
     <body>
         <header>
-            <h1>
-                <img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" style="vertical-align: middle; height: 200px;"> 
-                Surf Braza
-                </h1>  
+            <h1><img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" style="vertical-align: middle; height: 200px;"> Surf Braza</h1> 
+                <nav aria-label="navegação primária">
+                <ul>
+                    <li>
+                        <a href="/previsao.html">Previsão</a>
+                    </li>
+                    <li>
+                        <a href="/comunidade.html">Comunidade</a>
+                    </li>
+                    <li>
+                        <a href="/colabore.html">Colabore</a>
+                    </li>
+                </ul>
+                </nav>  
         </header>
     <hr>
     <main>
-    <section>
+    <section id="previsao">
     <h2>Previsão em tempo real</h2>
     <iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=6&overlay=waves&product=ecmwfWaves&level=surface&lat=-28.249&lon=-47.408&detailLat=-25.325&detailLon=-47.01&detail=true&message=true" style="border: none;"></iframe>
     <hr>
     </section>
-    <article>
+    <article id="comunidade">
     <h3> Comunidade Surf Braza</h3>
         <figure>
     <img src="https://img.freepik.com/free-photo/sportive-woman-surging_181624-42213.jpg?t=st=1732041656~exp=1732045256~hmac=acb19b32731d50518e54d05f7d65a37d0c6d3c5995bc05fe3e6fddc8d5401f19&w=1060" alt="pessoa surfando" style="height: 250px;">
@@ -40,13 +50,15 @@
         </figure>
     </article>
     <hr>
-    <section>
+    <section id="colabore">
     <h2>Colabore com o surf braza</h2>
-     Clique aqui para mandar suas fotos, sugestões e avaliações para aparecer no site!
+     Clique aqui para enviar sugestões e avaliações para aparecer no site!
     <hr>
+    </section>
+    <section id="duvida">
      <aside>
         <details>
-            <summary><strong>AJUDA </strong>Como entender a previsão?</summary>
+            <summary><strong>DÚVIDA </strong>Como entender a previsão?</summary>
             <p><strong>Encontre seu local:</strong> No mapa interativo, você pode buscar a cidade onde deseja ver a previsão de ondas.</p>   
             <p><strong>Veja as ondas no mapa:</strong> O mapa mostrará as previsões de ondas em cores e setas no mapa. As cores indicam o tamanho das ondas <mark>(azul para ondas pequenas e vermelho para grandes)</mark>, e as setas mostram a direção das ondas.</p>
             <p><strong>Ajuste a visualização:</strong> Você pode aumentar ou diminuir o zoom do mapa para ver mais detalhes, como a previsão das ondas em pontos específicos ao longo da costa. Além disso, pode mudar o horário da previsão, movendo a barra de tempo para ver como as condições vão mudar ao longo do dia.</p>
