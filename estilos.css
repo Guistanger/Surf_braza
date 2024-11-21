@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*Fonte principal */
+html {
+    font-family: "Roboto Mono", monospace;
+    }
+
+ /*Título da página */
+
+h1 {
+    padding-left: 370px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/*Menu de navegação*/
+
+nav {
+    text-align: center;
+
+}
+
+nav a{ 
+    color: black;
+    text-decoration: none;
+}
+
+/*
+nav ul{
+    list-style: none;
+}
+*/
+
+#lista {
+    list-style: none;
+}
+
+#lista li {
+    margin: 20px;
+}
+
+a{ 
+    color: black;
+}
+
+a:hover {
+  color:white;
+  background-color: #1e3f5a;
+
+
+}
+
+nav a:hover {
+   background-color: black; 
+   color: white;
+   padding: 15px;
+   border-radius: 10px;
+}
+
+/*galeria comunidade*/
+img {
+    max-width: 280px;
+    height: auto;
+}
+
+#galeria {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+figcation {
+    text-align: left;
+}
+
+@media (max-width: 650px){
+  #galeria {
+    flex-direction:: column;
+    align-items: center;
+  }  
+}
+
+/*roda pé */
+
+footer {
+    font-size: 0.75em;
+}
+
