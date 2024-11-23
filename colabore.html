@@ -1,93 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>
-            Colabore
-        </title>
-        <meta charset="UTF-8">
-        <meta name="autor" content="Guilherme Stanger">
-        <meta name="assunto" content="colabore com o app">
-        <link rel="icon" href="/images/favicon-32x32.png">
-        <link rel="manifest" href="/assets/manifest.json">
-        <link rel="stylesheet" href="estilos.css" type="text/css">
-    </head>
-    <body>
-        <header>
-            <h1><img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" style="vertical-align: middle; height: 200px;"> Surf Braza</h1> 
+<head>
+    <title>Colabore</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Guilherme Stanger">
+    <meta name="assunto" content="colabore com o app">
+    <link rel="icon" href="/images/favicon-32x32.png">
+    <link rel="manifest" href="/assets/manifest.json">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>
+                <img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" class="logo">
+                Surf Braza
+            </h1>
             <nav aria-label="navegação primária">
-            <ul id="lista">
-                <li>
-                    <a href="/">Início</a>
-                </li>
-                <li>
-                    <a href="/comunidade.html">Comunidade</a>
-                </li>
-                <li>
-                    <a href="/previsao">Previsão</a>
-                </li>
-            </ul>
+                <ul class="nav-list">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/comunidade.html">Comunidade</a></li>
+                    <li><a href="/previsao.html">Previsão</a></li>
+                </ul>
             </nav>  
-        </header>
+        </div>
+    </header>
+    
     <hr>
+    
     <main>
         <article id="colabore">
             <form action="#" method="post">
-            <h2>Participe do nosso site!</h2>
-            <p>Mande para nós seu @ junto com sua foto no surf para nossa galeria de fotos da comunidade!</p>
-            <p>Aproveite e nos mande sugestões do que você gostaria que tivesse aqui no Surf Braza.</p>
+                <h2>Participe do nosso site!</h2>
+                <p>Mande para nós seu @ junto com sua foto no surf para nossa galeria de fotos da comunidade!</p>
+                <p>Aproveite e nos mande sugestões do que você gostaria que tivesse aqui no Surf Braza.</p>
                 <fieldset>
-                    <legend>
-                    Faça parte
-                    </legend>
-                     <br>
+                    <legend>Faça parte</legend>
+                    <br>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Big Rider" autocomplete="on" required autofocus>
-                    <br>
-                    <br>
+                    <br><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="bigrider@email.com" autocomplete="on" required>
-                    <br>
-                    <br>
-                    <label for="instagram">Seu @ e o pico de surf: </label>
+                    <br><br>
+                    <label for="instagram">Seu @ e o pico de surf:</label>
                     <textarea id="instagram" name="instagram" cols="30" rows="1" placeholder="@gabrielmedina pico de matinhos" autocomplete="on" required></textarea>
-                    <br>
-                    <br>
-                    <br>
+                    <br><br>
                     <label for="imagem">Selecione sua foto:</label>
                     <input type="file" id="imagem" name="imagem">
-                    <br>
-                    <br>
+                    <br><br>
                     <button type="submit">Enviar</button>
                     <br>
                 </fieldset>
             </form>
-            <br>
-            <br>
-                <h2>Sugestões de melhorias</h2>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Sugestões para o site</legend>
-                        <label for="sugestoes">O que você gostaria de ver no site?</label>
-                        <br>
-                        <br>
-                        <textarea id="sugestoes" name="sugestoes" cols="30" rows="10" placeholder="Digite aqui suas sugestões"></textarea>
-                        <br>
-                        <br>
-                        <button type="submit">Enviar</button>
-                    </fieldset>
-                </form>
-            </article>
-    <hr>
-    <p>
-        <a href="/colabore.html">Voltar ao topo</a>
-    </p>
-    
+
+            <br><br>
+
+            <h2>Sugestões de melhorias</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Sugestões para o site</legend>
+                    <label for="sugestoes">O que você gostaria de ver no site?</label>
+                    <br><br>
+                    <textarea id="sugestoes" name="sugestoes" cols="30" rows="10" placeholder="Digite aqui suas sugestões"></textarea>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </article>
+
     </main>
-<hr>
-     <footer>
+    
+    <hr>
+    
+    <footer>
         <p>
-            &lt; &copy; Copyright Surf Braza &gt;
+            &lt; &copy; © 2024 Surf Braza. Todos os direitos reservados. &gt;
         </p>
-     </footer>
-    </body>
+    </footer>
+
+</body>
 </html>

@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>
-            Galeria de fotos Surf Braza
-        </title>
+        <title>Galeria de fotos Surf Braza</title>
         <meta charset="UTF-8">
         <meta name="autor" content="Guilherme Stanger">
-        <meta name="assunto" content="Comunidade surf braza">
+        <meta name="assunto" content="Comunidade Surf Braza">
         <link rel="icon" href="/images/favicon-32x32.png">
         <link rel="manifest" href="/assets/manifest.json">
         <link rel="stylesheet" href="estilos.css" type="text/css">
     </head>
     <body>
         <header>
-            <h1><img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" style="vertical-align: middle; height: 200px;"> Surf Braza</h1> 
+            <div class="header-container">
+                <h1>
+                    <img src="./images/android-chrome-512x512.png" alt="Logo Surf Braza" class="logo">
+                    Surf Braza
+                </h1> 
                 <nav aria-label="navegação primária">
-                <ul id="lista">
-                    <li>
-                        <a href="/">Início</a>
-                    </li>
-                    <li>
-                        <a href="/previsao">Comunidade</a>
-                    </li>
-                    <li>
-                        <a href="/colabore.html">Colabore</a>
-                    </li>
-                </ul>
+                    <ul class="nav-list">
+                        <li><a href="/">Início</a></li>
+                        <li><a href="/previsao">Previsão</a></li>
+                        <li><a href="/comunidade.html">Comunidade</a></li>
+                        <li><a href="/colabore.html">Colabore</a></li>
+                    </ul>
                 </nav>  
-        </header>
-    <hr>
-    <main>
-        <section>
-            <div class="gallery">
-                <!-- Primeira imagem -->
-                <figure>
-                    <img src="https://img.freepik.com/free-photo/sportive-woman-surging_181624-42213.jpg?t=st=1732041656~exp=1732045256~hmac=acb19b32731d50518e54d05f7d65a37d0c6d3c5995bc05fe3e6fddc8d5401f19&w=1060" alt="pessoa surfando">
-                    <figcaption>@Maria surfando em <em>Matinhos-PR</em></figcaption>
-                </figure>
-    
-                <!-- Segunda imagem -->
-                <figure>
-                    <img src="https://img.freepik.com/free-photo/helpful-father-daughter-doing-sports-beach-mid-adult-man-teaching-little-dark-haired-girl-how-ride-surfboard-family-leisure-active-lifestyle-concept_74855-22334.jpg?t=st=1732044797~exp=1732048397~hmac=06489e8c3a0c3d7735569d26f65898682f8a741e82187140f4800d4e6e1f588e&w=1060" alt="surfista">
-                    <figcaption>@Jose surfando em <em>Navegantes-PR</em></figcaption>
-                </figure>
-    
-                <!-- Terceira imagem -->
-                <figure>
-                    <img src="https://img.freepik.com/free-photo/surfer-wave_72229-1434.jpg?t=st=1732309806~exp=1732313406~hmac=1f0c8ecf58da9fae82ddd960b091d94e9fc89205298a3a539af6c5122c3f219b&w=900" alt="surfista na onda">
-                    <figcaption>@Jose surfando em <em>Navegantes-PR</em></figcaption>
-                </figure>
-    
-                <!-- Quarta imagem -->
-                <figure>
-                    <img src="https://img.freepik.com/free-photo/korean-surfer-rides-longboard-blue-waves_72229-1202.jpg?t=st=1732044825~exp=1732048425~hmac=8231a0a325ea4e13114431271294db550c47db05bb58e32e844afdc101a2ce2a&w=1060" alt="pedro surfando">
-                    <figcaption>@Pedro surfando em <em>Ilha do Mel-PR</em></figcaption>
-                </figure>
-    
-                <!-- Quinta imagem -->
-                <figure>
-                    <img src="https://img.freepik.com/free-photo/full-shot-woman-holding-surf-board_23-2148662754.jpg?t=st=1732309912~exp=1732313512~hmac=ce4d610ae3ed4fe12e78706c68687fad6b931770459c3d2580b6c8784f0686bd&w=1060" alt="julia com prancha de surf">
-                    <figcaption>@Julia surfando em <em>Guaratuba-PR</em></figcaption>
-                </figure>
             </div>
-        </section>
-    </main>    
-    <hr>
-     <footer>
-        <p>
-            &lt; &copy; Copyright Surf Braza &gt;
-        </p>
-     </footer>
+        </header>
+
+        <hr>
+
+        <main>
+            <section>
+                <h2 class="section-title">Galeria de Fotos</h2>
+                <div class="gallery">
+                    <!-- Primeira imagem -->
+                    <figure>
+                        <img src="https://img.freepik.com/free-photo/sportive-woman-surging_181624-42213.jpg?t=st=1732041656~exp=1732045256~hmac=acb19b32731d50518e54d05f7d65a37d0c6d3c5995bc05fe3e6fddc8d5401f19&w=1060" alt="pessoa surfando">
+                        <figcaption>@Maria surfando em <em>Matinhos-PR</em></figcaption>
+                    </figure>
+
+                    <!-- Segunda imagem -->
+                    <figure>
+                        <img src="https://img.freepik.com/free-photo/helpful-father-daughter-doing-sports-beach-mid-adult-man-teaching-little-dark-haired-girl-how-ride-surfboard-family-leisure-active-lifestyle-concept_74855-22334.jpg?t=st=1732044797~exp=1732048397~hmac=06489e8c3a0c3d7735569d26f65898682f8a741e82187140f4800d4e6e1f588e&w=1060" alt="surfista">
+                        <figcaption>@Jose surfando em <em>Navegantes-PR</em></figcaption>
+                    </figure>
+
+                    <!-- Terceira imagem -->
+                    <figure>
+                        <img src="https://img.freepik.com/free-photo/surfer-wave_72229-1434.jpg?t=st=1732309806~exp=1732313406~hmac=1f0c8ecf58da9fae82ddd960b091d94e9fc89205298a3a539af6c5122c3f219b&w=900" alt="surfista na onda">
+                        <figcaption>@Jose surfando em <em>Navegantes-PR</em></figcaption>
+                    </figure>
+
+                    <!-- Quarta imagem -->
+                    <figure>
+                        <img src="https://img.freepik.com/free-photo/korean-surfer-rides-longboard-blue-waves_72229-1202.jpg?t=st=1732044825~exp=1732048425~hmac=8231a0a325ea4e13114431271294db550c47db05bb58e32e844afdc101a2ce2a&w=1060" alt="pedro surfando">
+                        <figcaption>@Pedro surfando em <em>Ilha do Mel-PR</em></figcaption>
+                    </figure>
+
+                    <!-- Quinta imagem -->
+                    <figure>
+                        <img src="https://img.freepik.com/free-photo/full-shot-woman-holding-surf-board_23-2148662754.jpg?t=st=1732309912~exp=1732313512~hmac=ce4d610ae3ed4fe12e78706c68687fad6b931770459c3d2580b6c8784f0686bd&w=1060" alt="julia com prancha de surf">
+                        <figcaption>@Julia surfando em <em>Guaratuba-PR</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2024 Surf Braza. Todos os direitos reservados.</p>
+        </footer>
     </body>
 </html>
