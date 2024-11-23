@@ -1,63 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-/*Fonte principal */
+/* Fonte principal */
 html {
-    font-family: "Roboto Mono", monospace;
-    }
+    font-family: 'Poppins', sans-serif;
+}
 
- /*Título da página */
-
+/* Título da página */
 h1 {
     padding-left: 370px;
-    color: black;
+    color: #005073; /* Mudança para um azul mais vibrante, relacionado ao tema do surf */
     text-transform: uppercase;
+    font-family: 'Pacifico', cursive; /* Fonte para os títulos */
+    margin-top: 20px;
 }
 
-/*Menu de navegação*/
-
+/* Menu de navegação */
 nav {
     text-align: center;
-
+    margin-bottom: 20px;
 }
-
-nav a{ 
-    color: black;
-    text-decoration: none;
-}
-
-/*
-nav ul{
-    list-style: none;
-}
-*/
 
 #lista {
     list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento horizontal entre os itens */
 }
 
 #lista li {
-    margin: 20px;
+    margin: 30px 0; /* Aumenta o espaçamento vertical entre os itens */
 }
 
-a{ 
-    color: black;
+/* Menu de navegação no cabeçalho */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-a:hover {
-  color:white;
-  background-color: #1e3f5a;
+.nav-list {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Deixa os itens na horizontal */
+    justify-content: center; /* Centraliza os itens na linha */
+    gap: 20px; /* Espaçamento entre os itens da lista */
+}
 
+.nav-list li {
+    margin: 0; /* Remove a margem vertical entre os itens */
+}
 
+nav a {
+    color: #005073; /* Azul relacionado ao tema do surf */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
-   background-color: black; 
-   color: white;
-   padding: 15px;
-   border-radius: 10px;
+    background-color: #005073; /* Fundo azul mais escuro */
+    color: white;
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas ao passar o mouse */
 }
 
-/*galeria comunidade*/
+
+
+
+
+/* Galeria comunidade */
 img {
     max-width: 280px;
     height: auto;
@@ -68,22 +78,148 @@ img {
     width: 50%;
     margin: 0 auto;
     justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha quando necessário */
 }
 
-figcation {
-    text-align: left;
+figcaption {
+    text-align: center; /* Correção no alinhamento do texto */
+    color: #333; /* Melhor contraste para a legenda */
+    font-size: 0.9rem;
 }
 
-@media (max-width: 650px){
-  #galeria {
-    flex-direction:: column;
-    align-items: center;
-  }  
+@media (max-width: 650px) {
+    #galeria {
+        flex-direction: column;
+        align-items: center;
+        width: 80%; /* Ajusta largura para dispositivos móveis */
+    }
 }
 
-/*roda pé */
-
+/* Roda pé */
 footer {
     font-size: 0.75em;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para contraste */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
 }
+
+/* Página inicial */
+h2 {
+    text-align: center;
+    font-size: 2.0em;
+    font-family: 'Pacifico', cursive; /* Fonte para os títulos */
+    color: #005073;
+    margin-bottom: 20px;
+}
+
+#previsao {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+h3 { 
+    text-align: center;
+    font-size: 40px;
+    color: #005073;
+    margin-bottom: 20px;
+}
+
+#colabore {
+    font-size: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery figure {
+    background-color: #f8f8f8; /* Fundo claro para destacar a imagem */
+    border-radius: 10px; /* Canto arredondado */
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery figure:hover {
+    transform: scale(1.03); /* Efeito de zoom ao passar o mouse */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantém a imagem proporcional dentro do contêiner */
+    display: block;
+}
+
+.gallery figcaption {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Background */
+body {
+    background: url('/images/silas-baisch-ceITO2rlDgc-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #333; /* Ajuste da cor do texto para contraste */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); /* Overlay branco suave */
+    z-index: -1; /* Coloca o overlay atrás do conteúdo */
+}
+
+/* Botão voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffdd57;
+    padding: 10px;
+    border-radius: 50%;
+    color: #005073;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.back-to-top:hover {
+    background-color: #ffc107;
+}
+
+/* Remover marcadores de lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 
